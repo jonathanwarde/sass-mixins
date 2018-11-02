@@ -1,0 +1,23 @@
+/*
+
+Flex GRID MIXIN
+
+*/
+
+
+@mixin grid($col) {
+	max-width: (100% / 12) * $col; //needed for flex layout
+	flex-basis: (100% / 12) * $col; //needed for flex layout
+}
+
+
+/*
+
+Usage
+
+*/
+
+
+.sidebar {
+	@include grid(3);
+}
